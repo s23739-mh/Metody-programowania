@@ -16,5 +16,6 @@ public interface ZooRepository extends JpaRepository<Zoo, Integer> {
     int updateZoo(String name, boolean open, Integer id);
 
     List<Zoo> findAllByOpenIsFalse();
+
     List<Zoo> findAllByIdGreaterThan(Integer id);
 }

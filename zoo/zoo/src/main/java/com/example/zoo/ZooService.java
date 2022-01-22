@@ -15,7 +15,6 @@ public class ZooService {
     }
 
 
-
     public Zoo createZoo() {
         Animal lion = new Animal(null, "lion", Diet.MEAT, Type.LAND, false, Health.HEALTHY);
         List<Animal> animals = List.of(lion);
@@ -43,9 +42,8 @@ public class ZooService {
 
 
     public void update() {
-        zooRepository.updateZoo("AAA", true,2);
+        zooRepository.updateZoo("AAA", true, 2);
     }
-
 
 
     public Zoo findById(Integer id) {
@@ -118,7 +116,6 @@ public class ZooService {
         }
     }
 
-    // do dopisania: existsById, delete / deleteById
     public boolean existsById(Integer id) {
         return zooRepository.existsById(id);
     }
